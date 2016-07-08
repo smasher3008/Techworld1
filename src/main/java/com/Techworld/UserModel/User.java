@@ -19,6 +19,17 @@ public class User implements Serializable {
 	private int Role=1 ;
 	private String name;
 	
+	@Transient
+	private String ConfirmPassword;
+	
+	private int Contactno;
+	private String Address;
+	private String username;
+	private String email;
+	private String Password;
+	
+	
+	
 	
 	public String getUsername() {
 		return username;
@@ -68,16 +79,7 @@ public class User implements Serializable {
 		Address = address;
 	}
 
-	private String username;
-	private String email;
-	private String Password;
 	
-	@Transient
-	private String ConfirmPassword;
-	
-	private int Contactno;
-	private String Address;
-
 	public int getUserId() {
 		return UserId;
 	}
