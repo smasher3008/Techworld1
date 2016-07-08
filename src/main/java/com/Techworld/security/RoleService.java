@@ -6,7 +6,7 @@ import com.Techworld.model.Product;
 
 public interface RoleService {
 	
-	public List<Product> list();
+	public List<Role> list();
 
 	public void insert(Role r);
 

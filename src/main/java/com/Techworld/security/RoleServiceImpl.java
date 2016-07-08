@@ -15,16 +15,18 @@ public class RoleServiceImpl implements RoleService {
 	RoleDAO rdao;
 	
 	@Transactional
-	public List<Product> list() {
+	public List<Role> list() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+	@Transactional
 	public void insert(Role r) {
 		// TODO Auto-generated method stub
 		rdao.insert(r);
 	}
-
+	
+	@Transactional
 	public void delete(Role rd) {
 		// TODO Auto-generated method stub
 		

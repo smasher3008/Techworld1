@@ -5,11 +5,12 @@ import java.util.List;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.Techworld.model.Product;
 
-@Repository
+@Repository @EnableTransactionManagement
 public class RoleDAOImpl implements RoleDAO{
 
 	@Autowired
@@ -31,7 +32,7 @@ public class RoleDAOImpl implements RoleDAO{
 		// TODO Auto-generated method stub
 		
 	}
-
+ 
 	public void generateUserRole(Role r) {
 		// TODO Auto-generated method stub
 		

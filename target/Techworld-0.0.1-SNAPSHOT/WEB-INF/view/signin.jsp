@@ -23,15 +23,11 @@
 			
 		
 			
-				<c:if test="${not empty error}">
-			<div class="error">${error}</div>
-		</c:if>
-		<c:if test="${not empty msg}">
-			<div class="msg">${msg}</div>
-		</c:if>
+				
 
-			<section class="login">
-					<form action="signin" method='POST'>
+			<section class="signin">
+			
+					<form action="login" method='POST'>
 			
 							<div align="center">
 					
@@ -40,7 +36,7 @@
 						<%@ include file = "Head.jsp" %>
 			
 			
-			User name *: <p><input path= "username"  type="username" name="username" /></p>
+			User name *: <p><input path= "username"  type="text" name="username" /></p>
 			 
 			Password *:<p> <input path= "password" type="password" name="password" /></p>
 			 
